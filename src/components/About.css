@@ -1,0 +1,38 @@
+
+.child {
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.about_title {
+   font-size: 2rem;
+   font-weight: 500;
+}
+.about_title::after {
+  content: '';
+  display: block;
+  margin-right: 10%;
+  margin-top: 25px;
+  height: 10px;
+  width: 200px;
+  background-color: hsl(149,59%,18%);
+}
+.para_text {
+
+    margin-top: 50px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: 17px;
+    font-family: 'Courgette', cursive;
+    text-align: justify;
+
+}
+@media screen and (max-width: 480px) {
+   .para_text {
+         line-height: 1;
+         font-size: small;
+   }
+}
+ 
